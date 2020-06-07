@@ -7,7 +7,7 @@ function tarifP(masuk , keluar){
     var keluar = keluar.split(':');
     var durasi = (parseInt(keluar[0]) - parseInt(masuk[0])) + (Math.ceil((parseInt(keluar[1]) - parseInt(masuk[1]))/60));
     
-    var bayar = Math.ceil(durasi) * perJam + jamPertama;
+    var bayar = durasi * perJam + jamPertama;
     
         
     
